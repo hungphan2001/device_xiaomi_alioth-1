@@ -12,6 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 EVO_BUILD_TYPE := OFFICIAL
 WITH_GAPPS := true
 TARGET_INCLUDE_WIFI_EXT := true
+TARGET_BOOT_ANIMATION_RES := 1440
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Maintainer Props
