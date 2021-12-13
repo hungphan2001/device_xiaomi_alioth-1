@@ -1,13 +1,13 @@
 #
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2021 PixelPlusUI Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_alioth.mk
+    $(LOCAL_DIR)/aosp_alioth.mk
 
 COMMON_LUNCH_CHOICES := \
-    evolution_alioth-user \
-    evolution_alioth-userdebug \
-    evolution_alioth-eng
+    aosp_alioth-user \
+    aosp_alioth-userdebug \
+    aosp_alioth-eng
