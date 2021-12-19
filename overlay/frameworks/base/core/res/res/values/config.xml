@@ -488,4 +488,7 @@
         black in software (to avoid aliasing or emulate a cutout that is not physically existent).
     -->
     <bool name="config_fillMainBuiltInDisplayCutout">true</bool>
+
+    <!-- Whether device has fingerprint on power button -->
+    <bool name="config_powerButtonFingerprint">true</bool>
 </resources>
