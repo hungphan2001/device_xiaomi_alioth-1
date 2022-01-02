@@ -59,6 +59,10 @@ TARGET_ENABLE_AUDIO_ULL := true
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
+# Sensors
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
@@ -66,7 +70,7 @@ PRODUCT_SOONG_NAMESPACES += \
  # NQ Client
 PRODUCT_PACKAGES += \
     se_nq_extn_client
-    
+
 # Inherit from sm8250-common
 $(call inherit-product, device/xiaomi/sm8250-common/kona.mk)
 
